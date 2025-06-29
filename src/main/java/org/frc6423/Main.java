@@ -4,7 +4,7 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // MIT license file in the root directory of this project
 
-package frc.robot;
+package org.frc6423;
 
 import edu.wpi.first.wpilibj.RobotBase;
 
