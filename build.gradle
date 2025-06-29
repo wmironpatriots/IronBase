@@ -122,6 +122,17 @@ tasks.withType(JavaCompile) {
     options.compilerArgs.add '-XDstringConcat=inline'
 }
 
+// Generate Build Constants
+project.compileJava.dependsOn(createVersionFile)
+gversion {
+    srcDir = "src/main/java"
+    classPackage = "wmironpatriots"
+    className = "BuildConstants"
+    dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
+    timeZone = "GMT-4"
+    indent = "  "
+}
+
 // Spotless auto format
 project.compileJava.dependsOn(spotlessApply)
 spotless {
