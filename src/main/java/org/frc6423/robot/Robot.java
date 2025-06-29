@@ -4,7 +4,7 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // MIT license file in the root directory of this project
 
-package org.frc6423;
+package org.frc6423.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
