@@ -27,7 +27,6 @@ jobs:
         run: ./gradlew spotlessApply
       - name: Commit and Push formatted Code
         if: ${{ failure() && steps.formatting.conclusion == 'failure'}}
-        uses: actions/checkout@v3
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com' 
