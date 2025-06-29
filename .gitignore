@@ -169,9 +169,10 @@ out/
 .fleet
 
 # Simulation GUI and other tools window save file
-networktables.json
-simgui.json
-*-window.json
+# TODO add back after creating default saves
+# networktables.json
+# simgui.json
+# *-window.json
 
 # Simulation data log directory
 logs/
@@ -185,3 +186,6 @@ compile_commands.json
 
 # Eclipse generated file for annotation processors
 .factorypath
+
+# Build data
+src/main/java/org/frc6423/robot/BuildConstants.java
