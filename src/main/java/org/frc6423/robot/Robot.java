@@ -49,7 +49,8 @@ public class Robot extends CommandRobot implements Logged {
     Monologue.log(meta + "GitBranch", BuildConstants.GIT_BRANCH);
 
     // Set monologue to update and trace every loop
-    addPeriodic(() -> Tracer.traceFunc("Monologue", Monologue::updateAll), Flags.LOOPTIME.in(Seconds));
+    addPeriodic(
+        () -> Tracer.traceFunc("Monologue", Monologue::updateAll), Flags.LOOPTIME.in(Seconds));
 
     configureBindings();
     configureGameBehavior();
