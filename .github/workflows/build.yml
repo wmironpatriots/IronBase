@@ -15,7 +15,7 @@ jobs:
       - name: init Java
         uses: actions/setup-java@v3
         with:
-          distribution: "temmurin"
+          distribution: "temurin"
           java-version: "17"
       - name: Grant executive perms
         run: chmod +x gradlew
