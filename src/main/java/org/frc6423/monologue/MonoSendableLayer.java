@@ -30,7 +30,6 @@ import java.util.function.DoubleSupplier;
 import java.util.function.LongConsumer;
 import java.util.function.LongSupplier;
 import java.util.function.Supplier;
-
 import org.frc6423.monologue.MonoEntryLayer.MonologueBooleanEntry;
 import org.frc6423.monologue.MonoEntryLayer.MonologueDoubleEntry;
 import org.frc6423.monologue.MonoEntryLayer.MonologueEntry;

@@ -11,7 +11,6 @@ import static edu.wpi.first.units.Units.Seconds;
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
-
 import org.frc6423.lib.CommandRobot;
 import org.frc6423.lib.Tracer;
 import org.frc6423.monologue.Logged;

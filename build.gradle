@@ -122,6 +122,15 @@ tasks.withType(JavaCompile) {
     options.compilerArgs.add '-XDstringConcat=inline'
 }
 
+// Configure pre-commit hooks on first build
+task installGitHooks(type: Copy) {
+    println("--- Installing Pre-Commit Hook ---")
+    from '.scripts'
+    into '.git/hooks'
+    println("--- Pre-Commit Hook Installed ---")
+}
+project.compileJava.dependsOn(installGitHooks)
+
 // Generate Build Constants
 project.compileJava.dependsOn(createVersionFile)
 gversion {
@@ -134,7 +143,7 @@ gversion {
 }
 
 // Spotless auto format
-project.compileJava.dependsOn(spotlessApply)
+project.compileJava.dependsOn(spotlessCheck)
 spotless {
     java {
         target fileTree('.') {
@@ -153,7 +162,7 @@ spotless {
             include '**/*.gradle'
             exclude '**/build/**', '**/build-*/**'
             greclipse()
-            indentWithSpaces(4)
+            leadingTabsToSpaces(4)
             trimTrailingWhitespace()
             endWithNewline()
         }
@@ -165,7 +174,7 @@ spotless {
         }
         eclipseWtp('xml')
         trimTrailingWhitespace()
-        indentWithSpaces(2)
+        leadingTabsToSpaces(2)
         endWithNewline()
     }
     json {
@@ -180,7 +189,7 @@ spotless {
             exclude '**/build/**', '**/build-*/**', '**/venv/**'
         }
         trimTrailingWhitespace()
-        indentWithSpaces(4)
+        leadingTabsToSpaces(4)
         endWithNewline()
     }
 }

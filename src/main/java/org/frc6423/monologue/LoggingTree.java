@@ -14,7 +14,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
-
 import org.frc6423.monologue.MonoEntryLayer.MonologueBooleanEntry;
 import org.frc6423.monologue.MonoEntryLayer.MonologueDoubleEntry;
 import org.frc6423.monologue.MonoEntryLayer.MonologueEntry;

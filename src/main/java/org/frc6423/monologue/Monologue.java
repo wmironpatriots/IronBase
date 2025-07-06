@@ -12,7 +12,6 @@ import edu.wpi.first.wpilibj.DataLogManager;
 import edu.wpi.first.wpilibj.Timer;
 import java.util.ArrayList;
 import java.util.function.BooleanSupplier;
-
 import org.frc6423.monologue.LoggingTree.StaticObjectNode;
 
 /**
