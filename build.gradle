@@ -11,7 +11,7 @@ java {
     targetCompatibility = JavaVersion.VERSION_17
 }
 
-def ROBOT_MAIN_CLASS = "org.frc6423.Main"
+def ROBOT_MAIN_CLASS = "org.frc6423.robot.Main"
 
 // Define my targets (RoboRIO) and artifacts (deployable files)
 // This is added by GradleRIO's backing project DeployUtils.
@@ -84,14 +84,17 @@ dependencies {
     simulationRelease wpi.sim.enableRelease()
 
     // Junit testing
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.4'
-    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.11.4'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.11.4'
+    testImplementation(platform('org.junit:junit-bom:5.13.3'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+    testRuntimeOnly('org.junit.platform:junit-platform-launcher')
 }
 
 test {
     useJUnitPlatform()
     systemProperty 'junit.jupiter.extensions.autodetection.enabled', 'true'
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
 }
 
 // Simulation configuration (e.g. environment variables).
@@ -124,10 +127,8 @@ tasks.withType(JavaCompile) {
 
 // Configure pre-commit hooks on first build
 task installGitHooks(type: Copy) {
-    println("--- Installing Pre-Commit Hook ---")
     from '.scripts'
     into '.git/hooks'
-    println("--- Pre-Commit Hook Installed ---")
 }
 project.compileJava.dependsOn(installGitHooks)
 
