@@ -4,7 +4,9 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // MIT license file in the root directory of this project
 
-package monologue;
+package org.frc6423.monologue;
+
+import org.frc6423.monologue.MonoSendableLayer.NtSendableCompat;
 
 import edu.wpi.first.networktables.NetworkTable;
 import edu.wpi.first.util.sendable.Sendable;
@@ -12,7 +14,6 @@ import edu.wpi.first.util.struct.Struct;
 import edu.wpi.first.util.struct.StructSerializable;
 import edu.wpi.first.wpilibj.smartdashboard.Field2d;
 import edu.wpi.first.wpilibj.smartdashboard.Mechanism2d;
-import monologue.MonoSendableLayer.NtSendableCompat;
 
 /**
  * The GlobalLogged class is a utility class that provides a simple way to use Monologue's logging

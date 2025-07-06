@@ -4,7 +4,7 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // MIT license file in the root directory of this project
 
-package monologue;
+package org.frc6423.monologue;
 
 import edu.wpi.first.networktables.NetworkTable;
 import edu.wpi.first.networktables.NetworkTableInstance;
@@ -12,7 +12,8 @@ import edu.wpi.first.wpilibj.DataLogManager;
 import edu.wpi.first.wpilibj.Timer;
 import java.util.ArrayList;
 import java.util.function.BooleanSupplier;
-import monologue.LoggingTree.StaticObjectNode;
+
+import org.frc6423.monologue.LoggingTree.StaticObjectNode;
 
 /**
  * The Monologue class is the main entry point for the Monologue library. It is responsible for

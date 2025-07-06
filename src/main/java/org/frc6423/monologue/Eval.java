@@ -4,7 +4,7 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // MIT license file in the root directory of this project
 
-package monologue;
+package org.frc6423.monologue;
 
 import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodHandles;
@@ -17,16 +17,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-import monologue.Annotations.FlattenedLogged;
-import monologue.Annotations.IgnoreLogged;
-import monologue.Annotations.Log;
-import monologue.Annotations.MaybeLoggedType;
-import monologue.Annotations.OptionalLogged;
-import monologue.Annotations.SingletonLogged;
-import monologue.LoggingTree.*;
-import monologue.Primatives.BooleanVarHandle;
-import monologue.Primatives.DoubleVarHandle;
-import monologue.Primatives.LongVarHandle;
+
+import org.frc6423.monologue.Annotations.FlattenedLogged;
+import org.frc6423.monologue.Annotations.IgnoreLogged;
+import org.frc6423.monologue.Annotations.Log;
+import org.frc6423.monologue.Annotations.MaybeLoggedType;
+import org.frc6423.monologue.Annotations.OptionalLogged;
+import org.frc6423.monologue.Annotations.SingletonLogged;
+import org.frc6423.monologue.LoggingTree.*;
+import org.frc6423.monologue.Primatives.BooleanVarHandle;
+import org.frc6423.monologue.Primatives.DoubleVarHandle;
+import org.frc6423.monologue.Primatives.LongVarHandle;
 
 public class Eval {
   /**

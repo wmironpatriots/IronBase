@@ -4,7 +4,7 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // MIT license file in the root directory of this project
 
-package monologue;
+package org.frc6423.monologue;
 
 import edu.wpi.first.util.sendable.Sendable;
 import edu.wpi.first.util.struct.Struct;
@@ -15,7 +15,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.WeakHashMap;
-import monologue.LoggingTree.LoggingNode;
+
+import org.frc6423.monologue.LoggingTree.LoggingNode;
 
 /**
  * Interface for classes that can hold {@link Monologue} annotated fields for {@link

@@ -4,7 +4,7 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // MIT license file in the root directory of this project
 
-package monologue;
+package org.frc6423.monologue;
 
 import edu.wpi.first.util.struct.Struct;
 import edu.wpi.first.util.struct.StructSerializable;
@@ -14,13 +14,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
-import monologue.MonoEntryLayer.MonologueBooleanEntry;
-import monologue.MonoEntryLayer.MonologueDoubleEntry;
-import monologue.MonoEntryLayer.MonologueEntry;
-import monologue.MonoEntryLayer.MonologueLongEntry;
-import monologue.Primatives.BooleanGetter;
-import monologue.Primatives.DoubleGetter;
-import monologue.Primatives.LongGetter;
+
+import org.frc6423.monologue.MonoEntryLayer.MonologueBooleanEntry;
+import org.frc6423.monologue.MonoEntryLayer.MonologueDoubleEntry;
+import org.frc6423.monologue.MonoEntryLayer.MonologueEntry;
+import org.frc6423.monologue.MonoEntryLayer.MonologueLongEntry;
+import org.frc6423.monologue.Primatives.BooleanGetter;
+import org.frc6423.monologue.Primatives.DoubleGetter;
+import org.frc6423.monologue.Primatives.LongGetter;
 
 public class LoggingTree {
   private static class MonologueTriedToLogNull extends NullPointerException {

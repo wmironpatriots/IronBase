@@ -4,7 +4,7 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // MIT license file in the root directory of this project
 
-package monologue;
+package org.frc6423.monologue;
 
 public enum LogSink {
   /** Logs will be sent to NetworkTables and then mirrored to DataLog */

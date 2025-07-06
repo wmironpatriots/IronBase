@@ -11,11 +11,12 @@ import static edu.wpi.first.units.Units.Seconds;
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
-import monologue.Logged;
-import monologue.Monologue;
-import monologue.Monologue.MonologueConfig;
+
 import org.frc6423.lib.CommandRobot;
 import org.frc6423.lib.Tracer;
+import org.frc6423.monologue.Logged;
+import org.frc6423.monologue.Monologue;
+import org.frc6423.monologue.Monologue.MonologueConfig;
 import org.frc6423.robot.Constants.Flags;
 
 public class Robot extends CommandRobot implements Logged {

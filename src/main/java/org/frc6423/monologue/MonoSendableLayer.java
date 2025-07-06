@@ -4,7 +4,7 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // MIT license file in the root directory of this project
 
-package monologue;
+package org.frc6423.monologue;
 
 import edu.wpi.first.math.Pair;
 import edu.wpi.first.math.geometry.Pose2d;
@@ -30,10 +30,11 @@ import java.util.function.DoubleSupplier;
 import java.util.function.LongConsumer;
 import java.util.function.LongSupplier;
 import java.util.function.Supplier;
-import monologue.MonoEntryLayer.MonologueBooleanEntry;
-import monologue.MonoEntryLayer.MonologueDoubleEntry;
-import monologue.MonoEntryLayer.MonologueEntry;
-import monologue.MonoEntryLayer.MonologueLongEntry;
+
+import org.frc6423.monologue.MonoEntryLayer.MonologueBooleanEntry;
+import org.frc6423.monologue.MonoEntryLayer.MonologueDoubleEntry;
+import org.frc6423.monologue.MonoEntryLayer.MonologueEntry;
+import org.frc6423.monologue.MonoEntryLayer.MonologueLongEntry;
 
 public class MonoSendableLayer {
   private static final ArrayList<SendableContainer> sendables = new ArrayList<>();
