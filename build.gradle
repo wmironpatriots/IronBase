@@ -130,7 +130,6 @@ task installGitHooks(type: Copy) {
     from '.scripts'
     into '.git/hooks'
 }
-project.compileJava.dependsOn(installGitHooks)
 
 // Generate Build Constants
 project.compileJava.dependsOn(createVersionFile)
