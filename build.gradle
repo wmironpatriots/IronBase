@@ -124,10 +124,8 @@ tasks.withType(JavaCompile) {
 
 // Configure pre-commit hooks on first build
 task installGitHooks(type: Copy) {
-    println("--- Installing Pre-Commit Hook ---")
     from '.scripts'
     into '.git/hooks'
-    println("--- Pre-Commit Hook Installed ---")
 }
 project.compileJava.dependsOn(installGitHooks)
 
