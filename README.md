@@ -6,5 +6,6 @@
 * [ ] Update to post-kickoff/most recent vendordeps
 * [ ] Push updated libs to IronBase Repo
 * [ ] Update all references to the year (LICENSE, build.gradle, etc)
+* [ ] Import branch rulesets in .github/rulesets
 * [ ] Update `Authors.md`
 * [ ] Replace this README :)
