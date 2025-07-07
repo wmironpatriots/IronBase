@@ -18,8 +18,12 @@ import org.frc6423.monologue.Monologue;
 import org.frc6423.monologue.Monologue.MonologueConfig;
 import org.frc6423.robot.Constants.Flags;
 
+/**
+ * Main robot program
+ *
+ * <p>All robot hardware should be initialized here
+ */
 public class Robot extends CommandRobot implements Logged {
-
   public Robot() {
     super(Flags.LOOPTIME.in(Seconds));
 
@@ -56,8 +60,10 @@ public class Robot extends CommandRobot implements Logged {
     configureGameBehavior();
   }
 
+  /** Configure all Drive & Operator controller bindings */
   private void configureBindings() {}
 
+  /** Configure behavior during different match sections */
   private void configureGameBehavior() {}
 
   @Override

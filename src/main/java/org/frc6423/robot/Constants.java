@@ -10,7 +10,9 @@ import static edu.wpi.first.units.Units.Seconds;
 
 import edu.wpi.first.units.measure.Time;
 
+/** Global constants class */
 public class Constants {
+  /** Values that affect robot behavior during runtime */
   public class Flags {
     public static final Time LOOPTIME = Seconds.of(0.02);
   }
