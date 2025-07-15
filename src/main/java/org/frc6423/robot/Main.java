@@ -1,4 +1,4 @@
-// TODO Put Year Copyright (c) {year} FRC 6423 - Ward Melville Iron Patriots
+// TODO PUT COPYRIGHT YEAR!!! Copyright (c) <YEAR> FRC 6423 - Ward Melville Iron Patriots
 // https://github.com/FIRSTTeam6423
 // 
 // Open Source Software; you can modify and/or share it under the terms of
