@@ -127,8 +127,12 @@ tasks.withType(JavaCompile) {
 
 // Configure pre-commit hooks on first build
 task installGitHooks(type: Copy) {
+    logger.info("~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    logger.info("~~~ Installing Git Hooks ~~~")
+    logger.info("~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     from '.scripts'
     into '.git/hooks'
+    logger.info("Successfully Installed Hooks!")
 }
 
 // Generate Build Constants
