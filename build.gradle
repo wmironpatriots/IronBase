@@ -84,6 +84,7 @@ dependencies {
     simulationRelease wpi.sim.enableRelease()
 
     // Junit testing
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.11.4'
     testImplementation(platform('org.junit:junit-bom:5.13.3'))
     testImplementation('org.junit.jupiter:junit-jupiter')
     testRuntimeOnly('org.junit.platform:junit-platform-launcher')
@@ -127,10 +128,13 @@ tasks.withType(JavaCompile) {
 
 // Configure pre-commit hooks on first build
 task installGitHooks(type: Copy) {
+    logger.info("~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    logger.info("~~~ Installing Git Hooks ~~~")
+    logger.info("~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     from '.scripts'
     into '.git/hooks'
+    logger.info("Successfully Installed Hooks!")
 }
-project.compileJava.dependsOn(installGitHooks)
 
 // Generate Build Constants
 project.compileJava.dependsOn(createVersionFile)
@@ -156,7 +160,7 @@ spotless {
         removeUnusedImports()
         trimTrailingWhitespace()
         endWithNewline()
-        licenseHeader("// TODO Put Year Copyright (c) {year} FRC 6423 - Ward Melville Iron Patriots\n// https://github.com/FIRSTTeam6423\n// \n// Open Source Software; you can modify and/or share it under the terms of\n// MIT license file in the root directory of this project\n\n")
+        licenseHeader("// TODO PUT COPYRIGHT YEAR!!! Copyright (c) <YEAR> FRC 6423 - Ward Melville Iron Patriots\n// https://github.com/wmironpatriots\n// \n// Open Source Software; you can modify and/or share it under the terms of\n// MIT license file in the root directory of this project\n\n")
     }
     groovyGradle {
         target fileTree('.') {
